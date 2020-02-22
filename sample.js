@@ -2,7 +2,8 @@ const Handlebars = require("handlebars");
 const template = Handlebars.compile("Name: {{name}}");
 
 const model = {
-    name: "hahaha"
+    name: "hahaha",
+    age: 22
 };
 
 
