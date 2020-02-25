@@ -7,5 +7,21 @@ const model = {
 };
 
 
-console.log(template(model))
+console.log(template(model));
+
+const eachModel = {
+    user: [
+        {name: "one"},
+        {name: "two"},
+        {name: "three"}
+    ]
+};
+
+const templateEach = Handlebars.compile(`
+{{#each user}}
+    name = {{name}}
+{{/each}}
+`);
+
+console.log(templateEach(eachModel));
 
